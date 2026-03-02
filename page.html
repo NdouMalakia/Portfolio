@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">STACK.DEV</div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact" class="contact-btn">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<style>
+section {
+  margin-bottom: 30px; 
+}
+</style>
+
+<section class="home-section" id="home">
+    <div class="home-content">
+
+        <div class="home-text">
+            <h1>Hi, I'm <span>Ndou Malakia</span></h1>
+            <h2>Computer Science Student | Full Stack Developer</h2>
+            <p>
+                I am a second-year Computer Science student with passion to Full Stack Development 
+                specializing on building modern, scalable and high-performance web applications 
+                with clean code that are simple and easy to use.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="home-btn primary-btn">View Projects</a>
+                <a href="https://github.com/NdouMalakia" target="_blank" class="home-btn outline-btn">GitHub</a>
+            </div>
+        </div>
+
+        <div class="home-image">
+            <img src="ggh.png" alt="Ndou Malakia">
+        </div>
+
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-content">
+
+        <!-- Left side: image -->
+        <div class="about-image">
+            <img src="hyl.png" alt="Ndou Malakia">
+        </div>
+
+        <!-- Right side: text -->
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Ndou Malakia, a Full Stack Developer and second-year Computer Science student.
+                I enjoy building modern, scalable web applications that are easy to use and solve real problems.
+            </p>
+
+            <h3>Education</h3>
+            <ul>
+                <li>BSc in Computer Science — 2nd Year, University of Venda</li>
+                <li>Completed “Data Science” course on sffp</li>
+                
+            </ul>
+
+            <h3>Skills</h3>
+            <div class="skills-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>Git/GitHub</span>
+                <span>VS Code</span>
+            </div>
+
+            <h3>Experience / Projects</h3>
+            <ul>
+                <li><strong>Portfolio Website:</strong> Responsive portfolio built with HTML, CSS, JS.</li>
+                <li><strong>Task Manager App:</strong> Responsive websites to manage tasks built with HTML, CSS, JS.</li>
+                <li><strong>Weather App:</strong> Responsive websites to check weather built with HTML, CSS, JS and API integration</li>
+            </ul>
+
+            <h3>Personal Note</h3>
+            <p>
+                I love exploring new frameworks, contributing to open source, and building small AI experiments in my free time.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="ts.png" alt="Task Manager App">
+            <h3>Task Manager App</h3>
+            <p>Task Manager App using HTML, CSS, and JavaScript.</p>
+            <a href="https://ndoumalakia.github.io/TaskManager/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="w.png" alt="Weather App">
+            <h3>Weather App</h3>
+            <p>Real-time weather app built with JS and API integration for accurate forecasts.</p>
+            <a href="https://ndoumalakia.github.io/WeatherApp/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="si.png" alt="Sinema">
+            <h3>Tick.Booking Web</h3>
+            <p>Responsive Sinema tickets Booking Web built with HTML, CSS, and JS.</p>
+            <a href="https://ndoumalakia.github.io/Sinema/" target="_blank" class="project-btn">View Project</a>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+
+<section class="blogs-section" id="blogs">
+    <h2>My Blog</h2>
+
+    <div class="blogs-grid">
+
+
+        <div class="blog-card">
+    <span class="blog-date">March 2026</span>
+    <h3>How I Built My Portfolio Website</h3>
+    <p>A breakdown of how I designed and developed my portfolio using HTML, CSS, and JavaScript.</p>
+    
+    <button class="blog-btn" onclick="toggleBlog(this)">Read More</button>
+
+    <div class="blog-full">
+        <h4>🎨 Planning the Design</h4>
+        <p>
+            Before writing any code, I first planned the layout structure of my website.
+            I decided to create sections like Home, About, Projects, and Blogs.
+            I wanted a modern, dark-themed interface with smooth animations.
+        </p>
+
+        <h4>🧱 Structuring with HTML</h4>
+        <p>
+            I used semantic HTML to organize the content properly.
+            Each section was wrapped inside clear sections, making it easier
+            to style and maintain.
+        </p>
+
+        <h4>🎨 Styling with CSS</h4>
+        <p>
+            I implemented a dark color scheme using navy and black tones.
+            Glassmorphism effects, smooth hover animations, and responsive
+            design techniques made the website feel modern.
+        </p>
+
+        <h4>⚡ Adding Interactivity with JavaScript</h4>
+        <p>
+            JavaScript was used to add smooth scrolling, toggle buttons,
+            and interactive blog sections. This improved user experience
+            and made the site feel dynamic.This was a bit challenging for me.
+        </p>
+
+        <h4>🎯 What I Learned</h4>
+        <p>
+            Building this portfolio improved my frontend skills,
+            strengthened my understanding of responsive design,
+            and gave me confidence to build more advanced projects.
+        </p>
+    </div>
+</div>
+
+        <div class="blog-card">
+    <span class="blog-date">February 2026</span>
+    <h3>My Journey as a 2nd Year CS Student</h3>
+    <p>Reflections on learning programming, problem solving, and building real-world projects.</p>
+    
+    <button class="blog-btn" onclick="toggleBlog(this)">Read More</button>
+
+    <div class="blog-full">
+        <h4>🧠 My Journey as a 2nd Year CS Student</h4>
+        <p>
+            When I started Computer Science, I thought programming was just about writing code.
+            I quickly realized it is more about problem-solving, logical thinking, and consistency.
+        </p>
+
+        <h4>💻 Learning Programming</h4>
+        <p>
+            In first year, concepts like variables, loops, and functions felt confusing.
+            But in second year, everything started making sense as I practiced more.
+        </p>
+
+        <h4>🚀 Building Real Projects</h4>
+        <p>
+            I built my portfolio website, JavaScript mini apps, and hosted projects on GitHub.
+            These projects helped me gain real-world experience.
+        </p>
+
+        <h4>🎯 My Goals</h4>
+        <p>
+            I aim to build full-stack projects, improve my coding skills, and prepare for internships.
+        </p>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">
+        Have a project idea or want to collaborate? Let’s connect.
+    </p>
+
+    <!-- Added id="contact-form" -->
+    <!-- Contact Form -->
+<form id="contact-form" class="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  (function(){
+    emailjs.init("wXO8Z0VBHM6Z7Qhkx");
+  })();
+
+  // Form submit handler
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent page reload
+
+    emailjs.sendForm("service_5cxigb7", "template_qv2y3ms", this)
+      .then(function() {
+        alert("Message sent successfully!"); 
+        document.getElementById("contact-form").reset(); // clears input fields
+      }, function(error) {
+        alert("Failed to send message.");
+        console.error(error);
+      });
+  });
+</script>
+</section>
+
+<script src="script.js"></script>
+
+<script>
+function toggleBlog(button) {
+    const blogContent = button.nextElementSibling;
+
+    blogContent.classList.toggle("active");
+
+    if (blogContent.classList.contains("active")) {
+        button.textContent = "Read Less";
+    } else {
+        button.textContent = "Read More";
+    }
+}
+</script>
+</body>
+</html>
