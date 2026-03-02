@@ -1,30 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
+    const navbar = document.querySelector(".navbar");
+
+    function getNavbarHeight() {
+        return navbar ? navbar.offsetHeight : 0;
+    }
+
+    // Smooth scroll for anchor links
     document.querySelectorAll("a[href^='#']").forEach(anchor => {
         anchor.addEventListener("click", function(e) {
-            e.preventDefault();
-
             const targetId = this.getAttribute("href");
-            if (!targetId) return;
+
+            if (!targetId || targetId === "#") return;
 
             const target = document.querySelector(targetId);
             if (!target) return;
 
-            // Calculate exact scroll position
+            e.preventDefault();
+
+            const navbarHeight = getNavbarHeight();
             const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-            const scrollToPosition = targetPosition - navbarHeight - 10; // 10px spacing
+            const offset = window.innerWidth <= 768 ? 5 : 15; 
+            // smaller spacing on mobile
 
             window.scrollTo({
-                top: scrollToPosition,
+                top: targetPosition - navbarHeight - offset,
                 behavior: "smooth"
             });
         });
     });
 
-    // Home image glow toggle
-    const profileImage = document.querySelector(".home-image img");
-    profileImage.addEventListener("click", () => {
-        profileImage.classList.toggle("active-glow");
+    // Recalculate on window resize (important for tablets & mobile)
+    window.addEventListener("resize", () => {
+        getNavbarHeight();
     });
+
+    // Home image glow toggle (safe check)
+    const profileImage = document.querySelector(".home-image img");
+
+    if (profileImage) {
+        profileImage.addEventListener("click", () => {
+            profileImage.classList.toggle("active-glow");
+        });
+    }
+
 });
