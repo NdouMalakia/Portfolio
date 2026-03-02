@@ -549,3 +549,58 @@ html {
     font-size: 14px;
     line-height: 1.6;
 }
+/* MOBILE & TABLET RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .container {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    
+    .contact-btn {
+        margin-top: 10px;
+    }
+
+    /* Home Section */
+    .home-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .home-text p {
+        max-width: 100%;
+    }
+
+    .home-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Project & Blog grids */
+    .projects-grid,
+    .blogs-grid {
+        grid-template-columns: 1fr;
+    }
+}
