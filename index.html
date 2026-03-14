@@ -57,12 +57,12 @@ section {
 <section class="about-section" id="about">
     <div class="about-content">
 
-        <!-- Left side: image -->
+        
         <div class="about-image">
             <img src="hyl.png" alt="Ndou Malakia">
         </div>
 
-        <!-- Right side: text -->
+        
         <div class="about-text">
             <h2>About Me</h2>
             <p>
@@ -107,7 +107,7 @@ section {
 <section class="projects-section" id="projects">
     <h2>My Projects</h2>
     <div class="projects-grid">
-        <!-- Project 1 -->
+        
         <div class="project-card">
             <img src="ts.png" alt="Task Manager App">
             <h3>Task Manager App</h3>
@@ -115,7 +115,7 @@ section {
             <a href="https://ndoumalakia.github.io/TaskManager/" target="_blank" class="project-btn">View Project</a>
         </div>
 
-        <!-- Project 2 -->
+        
         <div class="project-card">
             <img src="w.png" alt="Weather App">
             <h3>Weather App</h3>
@@ -123,7 +123,7 @@ section {
             <a href="https://ndoumalakia.github.io/WeatherApp/" target="_blank" class="project-btn">View Project</a>
         </div>
 
-        <!-- Project 3 -->
+        
         <div class="project-card">
             <img src="si.png" alt="Sinema">
             <h3>Tick.Booking Web</h3>
@@ -131,7 +131,6 @@ section {
             <a href="https://ndoumalakia.github.io/Sinema/" target="_blank" class="project-btn">View Project</a>
         </div>
 
-        <!-- Add more projects as needed -->
     </div>
 </section>
 
@@ -228,7 +227,7 @@ section {
         Have a project idea or want to collaborate? Let’s connect.<br>
 
     <div class="contact-linksS">
-  <a href="https://linkedin.com/in/yourprofile" target="_blank">
+  <a href="https://linkedin.com/in/malakia-ndou-a41784362" target="_blank">
     <i class="fa-brands fa-linkedin"></i> LinkedIn
   </a>
 
@@ -240,10 +239,7 @@ section {
     <i class="fa-brands fa-github"></i> GitHub
   </a>
   </div>
-    </p>
-
-    <!-- Added id="contact-form" -->
-    <!-- Contact Form -->
+    </p>    
 <form id="contact-form" class="contact-form">
     <input type="text" name="user_name" placeholder="Your Name" required>
     <input type="email" name="user_email" placeholder="Your Email" required>
@@ -251,22 +247,22 @@ section {
     <button type="submit">Send Message</button>
 </form>
 
-<!-- EmailJS Script -->
+
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-  // Initialize EmailJS
+  
   (function(){
     emailjs.init("wXO8Z0VBHM6Z7Qhkx");
   })();
 
-  // Form submit handler
+
   document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent page reload
+    event.preventDefault();
 
     emailjs.sendForm("service_5cxigb7", "template_qv2y3ms", this)
       .then(function() {
         alert("Message sent successfully!"); 
-        document.getElementById("contact-form").reset(); // clears input fields
+        document.getElementById("contact-form").reset(); 
       }, function(error) {
         alert("Failed to send message.");
         console.error(error);
