@@ -10,7 +10,7 @@ body {
     background: linear-gradient(135deg, #000000, #0a192f, #001f3f);
 }
 
-/* Navbar */
+
 .navbar {
     width: 100%;
     padding: 20px 60px;
@@ -18,7 +18,7 @@ body {
     top: 0;
 }
 
-/* Glass container */
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,6 @@ body {
     border: 1px solid rgba(0, 119, 255, 0.2);
 }
 
-/* Logo */
 .logo {
     font-size: 20px;
     font-weight: bold;
@@ -39,7 +38,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Links */
 .nav-links a {
     text-decoration: none;
     color: #ccd6f6;
@@ -48,12 +46,10 @@ body {
     transition: 0.3s ease;
 }
 
-/* Hover effect */
 .nav-links a:hover {
     color: #00bfff;
 }
 
-/* Contact Button */
 .contact-btn {
     padding: 8px 18px;
     border-radius: 20px;
@@ -68,7 +64,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-/* HOME SECTION */
+
 .home-section {
     padding: 150px 80px;
     color: #ccd6f6;
@@ -139,7 +135,7 @@ body {
     width: 300px;
     border-radius: 20px;
 }
-/* Background Glow Effects */
+
 .home-section::after {
     content: "";
     position: absolute;
@@ -183,7 +179,7 @@ body {
         opacity: 1;
     }
 }
-/* Click Glow Effect */
+
 .home-image img {
     transition: 0.4s ease;
     cursor: pointer;
@@ -194,7 +190,7 @@ body {
                 0 0 80px rgba(0, 119, 255, 0.7);
     transform: scale(1.05);
 }
-/* ABOUT SECTION */
+
 .about-section {
     padding: 100px 80px;
     display: flex;
@@ -260,17 +256,17 @@ body {
     display: inline-block;
 }
 html {
-    scroll-padding-top: 120px; /* adjust based on navbar height */
-    scroll-behavior: smooth;    /* enables smooth scrolling */
+    scroll-padding-top: 120px; 
+    scroll-behavior: smooth;    
 }
-/* Glow effect on hover for all nav links */
+
 .nav-links a:hover {
     color: #00bfff;
     text-shadow: 0 0 8px #00bfff, 0 0 15px #0077ff;
 }
 html {
-    scroll-behavior: smooth;       /* smooth scrolling for anchor links */
-    scroll-padding-top: 120px;     /* leave space for fixed navbar */
+    scroll-behavior: smooth;       
+    scroll-padding-top: 120px;     
 }
 .about-section {
     padding: 100px 80px;
@@ -313,7 +309,6 @@ html {
     border-color: #00bfff;
 }
 
-/* Projects Section */
 .projects-section {
     padding: 100px 80px;
     color: #ccd6f6;
@@ -328,7 +323,7 @@ html {
     text-shadow: 0 0 10px #00bfff;
 }
 
-/* Grid for project cards */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -336,7 +331,7 @@ html {
     justify-items: center;
 }
 
-/* Individual project card */
+
 .project-card {
     background: rgba(10, 25, 47, 0.6);
     backdrop-filter: blur(12px);
@@ -354,7 +349,6 @@ html {
     box-shadow: 0 0 20px #00bfff, 0 0 40px #0077ff;
 }
 
-/* Card image */
 .project-card img {
     width: 100%;
     border-radius: 20px;
@@ -368,7 +362,6 @@ html {
     margin-bottom: 10px;
 }
 
-/* Card description */
 .project-card p {
     color: #ccd6f6;
     font-size: 14px;
@@ -376,7 +369,6 @@ html {
     margin-bottom: 15px;
 }
 
-/* Button */
 .project-btn {
     display: inline-block;
     text-decoration: none;
@@ -393,7 +385,6 @@ html {
     box-shadow: 0 0 15px #00bfff, 0 0 30px #0077ff;
 }
 
-/* BLOG SECTION */
 .blogs-section {
     padding: 100px 80px;
     background: linear-gradient(135deg, #000000, #0a192f, #001f3f);
@@ -408,14 +399,12 @@ html {
     text-shadow: 0 0 12px #00bfff;
 }
 
-/* Grid layout */
 .blogs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
-/* Blog Card */
 .blog-card {
     background: rgba(10, 25, 47, 0.7);
     backdrop-filter: blur(12px);
@@ -447,7 +436,6 @@ html {
     margin-bottom: 20px;
 }
 
-/* Button */
 .blog-btn {
     text-decoration: none;
     color: white;
@@ -461,7 +449,6 @@ html {
     box-shadow: 0 0 15px #00bfff;
 }
 
-/* CONTACT SECTION */
 .contact-section {
     padding: 100px 80px;
     background: linear-gradient(135deg, #000000, #0a192f, #001f3f);
@@ -482,7 +469,6 @@ html {
     color: #8892b0;
 }
 
-/* FORM */
 .contact-form {
     max-width: 500px;
     margin: auto;
@@ -491,7 +477,6 @@ html {
     gap: 20px;
 }
 
-/* Inputs */
 .contact-form input,
 .contact-form textarea {
     padding: 12px 15px;
@@ -504,14 +489,12 @@ html {
     transition: 0.3s;
 }
 
-/* Input focus glow */
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #00bfff;
     box-shadow: 0 0 10px #00bfff;
 }
 
-/* Button */
 .contact-form button {
     padding: 12px;
     border-radius: 20px;
@@ -537,7 +520,7 @@ html {
 }
 
 .blog-full.active {
-    max-height: 500px; /* adjust if content grows */
+    max-height: 500px; 
 }
 
 .blog-full h4 {
@@ -549,10 +532,10 @@ html {
     font-size: 14px;
     line-height: 1.6;
 }
-/* MOBILE & TABLET RESPONSIVENESS */
+
 @media (max-width: 768px) {
 
-    /* Navbar */
+    
     .container {
         flex-direction: column;
         padding: 15px 20px;
@@ -575,7 +558,6 @@ html {
         margin-top: 10px;
     }
 
-    /* Home Section */
     .home-content {
         flex-direction: column;
         gap: 20px;
@@ -591,14 +573,12 @@ html {
         max-width: 300px;
     }
 
-    /* About Section */
     .about-content {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
 
-    /* Project & Blog grids */
     .projects-grid,
     .blogs-grid {
         grid-template-columns: 1fr;
